@@ -1,6 +1,6 @@
 Name:           ca-certs-static
 Version:        0.1
-Release:        5
+Release:        6
 License:        MPL-2.0 GPL-2.0
 Summary:        Default System Trust Store
 Url:            https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
@@ -12,13 +12,6 @@ Requires:       filesystem
 
 %description
 Default System Trust store.
-
-%package internal
-Summary: Support for builds which require deployed trust store
-Group: Data
-
-%description internal
-Support for builds which require deployed trust store
 
 %prep
 rm -rf build
