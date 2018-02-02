@@ -1,6 +1,6 @@
 Name:           ca-certs-static
 Version:        0.1
-Release:        7
+Release:        8
 License:        MPL-2.0 GPL-2.0
 Summary:        Default System Trust Store
 Url:            https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
