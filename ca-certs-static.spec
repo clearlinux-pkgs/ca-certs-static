@@ -1,6 +1,6 @@
 Name:           ca-certs-static
 Version:        0.1
-Release:        10
+Release:        11
 License:        MPL-2.0 GPL-2.0
 Summary:        Default System Trust Store
 Url:            https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
@@ -26,6 +26,7 @@ cp -r --preserve=mode,links build/* %{buildroot}/usr/share/ca-certs/.prebuilt-st
 mkdir -p %{buildroot}/usr/lib/systemd/system/multi-user.target.wants
 install -m 0644 %{SOURCE0} %{buildroot}/usr/lib/systemd/system/prebuilt-trust-store.service
 cd %{buildroot}/usr/lib/systemd/system/multi-user.target.wants && ln -s ../prebuilt-trust-store.service .
+cd -
 
 %files
 /usr/share/ca-certs/.prebuilt-store/*
